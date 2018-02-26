@@ -1,0 +1,12 @@
+/* This is the stylesheet for the Trivia game. */
+.quizElement{
+    display: none;
+}
+
+.wrapper{
+    width: 100%;
+}
+
+#begin:hover{
+    cursor: pointer;
+}
