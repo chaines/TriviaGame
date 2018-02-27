@@ -17,12 +17,16 @@ var begin = false;
 // To do: add timer start
 function renderGame() {
     $('#startScreen').css('display','none');
+    $('.resultScreen').css('display','none');
     $('.quizElement').css('display','inline-block');
 };
 
 function results() {
     $('.quizElement').css('display','none');
-    $('#resultScreen').css('display','inline-block');
+    $('.resultScreen').css('display','inline-block');
+    $('#correct').text('Correct: ' + correct);
+    $('#incorrect').text('Incorrect: ' + incorrect);
+    $('#unanswered').text('Unanswered: ' + unanswered);
 }
 
 
@@ -42,7 +46,7 @@ $('#begin').on("click", function(startGame){
 $('#submitButton').on('click', function(showResults){
     results();
 });
-// "Start Over?" button restarts the game.
+// "Start Over" button restarts the game.
 $('#restart').on('click', function(restartGame){
     renderGame();
 });
