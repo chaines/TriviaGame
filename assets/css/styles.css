@@ -3,6 +3,10 @@
     display: none;
 }
 
+.resultScreen{
+    display: none;
+}
+
 .wrapper{
     width: 100%;
     padding: 25px;

@@ -20,6 +20,11 @@ function renderGame() {
     $('.quizElement').css('display','inline-block');
 };
 
+function results() {
+    $('.quizElement').css('display','none');
+    $('#resultScreen').css('display','inline-block');
+}
+
 
 
 
@@ -34,5 +39,10 @@ $('#begin').on("click", function(startGame){
 // To do: Make an if statement to detect Correct/Incorrect/Unanswered results when the "Submit" button is clicked.
 
 // To do: Display the results on a different screen after submitting the quiz.
-
-// To do: Make the "Start Over?" button work and reset the game using the renderGame() function.
+$('#submitButton').on('click', function(showResults){
+    results();
+});
+// "Start Over?" button restarts the game.
+$('#restart').on('click', function(restartGame){
+    renderGame();
+});
