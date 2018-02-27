@@ -5,8 +5,11 @@
 
 .wrapper{
     width: 100%;
+    padding: 25px;
 }
 
 #begin:hover{
     cursor: pointer;
+    background-color: blue;
+    color: white;
 }

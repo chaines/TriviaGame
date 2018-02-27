@@ -10,7 +10,11 @@ var unanswered = 0;
 var begin = false;
 
 // Functions
+
+// To do: Create a timer
+
 // This function will hide the start screen and show the trivia game and start the timer.
+// To do: add timer start
 function renderGame() {
     $('#startScreen').css('display','none');
     $('.quizElement').css('display','inline-block');
@@ -26,3 +30,9 @@ function renderGame() {
 $('#begin').on("click", function(startGame){
     renderGame();
 });
+
+// To do: Make an if statement to detect Correct/Incorrect/Unanswered results when the "Submit" button is clicked.
+
+// To do: Display the results on a different screen after submitting the quiz.
+
+// To do: Make the "Start Over?" button work and reset the game using the renderGame() function.
